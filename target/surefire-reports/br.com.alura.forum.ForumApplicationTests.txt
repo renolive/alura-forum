@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: br.com.alura.forum.ForumApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 88.033 s <<< FAILURE! - in br.com.alura.forum.ForumApplicationTests
+contextLoads  Time elapsed: 0.889 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Invalid mapping on handler class [br.com.alura.forum.controller.AnswerController]: public org.springframework.http.ResponseEntity br.com.alura.forum.controller.AnswerController.updateAnswer(long,br.com.alura.forum.data.model.AnswerUpdateRequest)
+Caused by: java.lang.IllegalStateException: Invalid mapping on handler class [br.com.alura.forum.controller.AnswerController]: public org.springframework.http.ResponseEntity br.com.alura.forum.controller.AnswerController.updateAnswer(long,br.com.alura.forum.data.model.AnswerUpdateRequest)
+Caused by: org.springframework.web.util.pattern.PatternParseException: Not allowed to capture 'id' twice in the same pattern
+
